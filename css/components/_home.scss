@@ -1,0 +1,91 @@
+
+
+#home {
+    position: relative;
+    background-color: #254d32;
+    height: 100vh;
+    
+    .container {
+        position: relative;
+        display: flex;
+        .home-left {
+            width: 50%;
+            // height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: auto;
+            .title {
+                width: 100%;
+                h1 {
+                    font-size: 7rem;
+                    line-height: 1;
+                    color: #d0db97;
+                    letter-spacing: 0.2rem;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    width: 80%;
+                    color: #69b578;
+                }
+
+            }
+
+            .bar {
+                width: 60%;
+                height: 1px;
+                margin-right: auto;
+                background-color: #fff;
+            }
+
+
+            .button-container {
+                position: relative;
+                display: flex;                
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+
+                .button {
+                    position: relative;
+                    width: 300px;
+                    height: 70px;
+                    border: 2px solid #69b578;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all ease 250ms;
+                    overflow: hidden;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #69b578;
+                        border-color: #fff;
+                    }
+                }
+            }
+            
+        }
+        
+        .home-right {
+            position: relative;
+            width: 50%;
+            display: flex;
+            
+
+            .img-container {
+                width: 90%;
+                margin-top: auto;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+#about {
+    width: 100%;
+    // min-height: 100vh;
+
+    .container {
+        display: flex;
+        width: 100%;
+    
+        .about-left {
+            width: 50%;
+            height: 100%;
+                margin-top: auto;
+
+            .img-container {
+                width: 80%;
+                
+                img {
+                    width: 100%;
+                    object-fit: contain;
+
+                }
+            }
+        }
+
+        .about-right {
+            width: 50%;
+
+            .about-title {
+                font-family: $bfont;
+                font-size: 7rem;
+            }
+
+            .about-text {
+                margin-top: 3rem;
+                font-family: $poppins;
+                font-size: 1.5rem;
+                line-height: 1.5;
+                color: #69b578;
+                letter-spacing: 0.2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1ch;
+            }
+        }
+    }
+
+}
