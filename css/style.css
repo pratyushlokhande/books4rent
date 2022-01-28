@@ -71,7 +71,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 7rem;
+  height: 6rem;
   background-color: #fff;
   z-index: 100;
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -93,7 +93,7 @@ nav .navbar {
 }
 
 nav .navbar .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Abril Fatface", cursive;
   letter-spacing: 0.2rem;
   color: #254d32;
@@ -104,11 +104,13 @@ nav .navbar .links ul {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 nav .navbar .links ul li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: #254d32;
+  font-weight: 600;
 }
 
 #home {
@@ -142,7 +144,7 @@ nav .navbar .links ul li {
 }
 
 #home .container .home-left .title h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   line-height: 1;
   color: #d0db97;
   letter-spacing: 0.2rem;
@@ -176,8 +178,8 @@ nav .navbar .links ul li {
 
 #home .container .home-left .button-container .button {
   position: relative;
-  width: 300px;
-  height: 70px;
+  width: 12rem;
+  height: 3rem;
   border: 2px solid #69b578;
   font-size: 1.2rem;
   font-weight: 600;
@@ -205,6 +207,7 @@ nav .navbar .links ul li {
 #home .container .home-right .img-container {
   width: 90%;
   margin-top: auto;
+  margin-left: auto;
 }
 
 #home .container .home-right .img-container img {
@@ -224,16 +227,17 @@ nav .navbar .links ul li {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  gap: 10%;
 }
 
 #about .container .about-left {
-  width: 50%;
+  width: 40%;
   height: 100%;
   margin-top: auto;
 }
 
 #about .container .about-left .img-container {
-  width: 80%;
+  width: 100%;
 }
 
 #about .container .about-left .img-container img {
@@ -248,13 +252,13 @@ nav .navbar .links ul li {
 
 #about .container .about-right .about-title {
   font-family: "Abril Fatface", cursive;
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 #about .container .about-right .about-text {
   margin-top: 3rem;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: #69b578;
   letter-spacing: 0.2rem;
@@ -292,7 +296,7 @@ nav .navbar .links ul li {
 
 #how .container .title h1 {
   font-family: "Abril Fatface", cursive;
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 #how .container .info {
@@ -301,6 +305,11 @@ nav .navbar .links ul li {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
+  height: 30vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #how .container .info .item {
@@ -308,7 +317,6 @@ nav .navbar .links ul li {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  height: 10vh;
   width: 25%;
 }
 
@@ -324,7 +332,7 @@ nav .navbar .links ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #69b578;
   border-radius: 50%;
@@ -333,12 +341,13 @@ nav .navbar .links ul li {
 
 #how .container .info .item .content {
   width: 70%;
-  font-size: 1.5rem;
+  height: 100%;
+  font-size: 1.2rem;
 }
 
 #how .container .info .pipe {
   width: 5px;
-  height: 15vh;
+  height: 30vh;
   border-radius: 2.5px;
   background-color: #69b578;
 }
@@ -366,7 +375,7 @@ nav .navbar .links ul li {
 
 #infoGrid .container .title h1 {
   font-family: "Abril Fatface", cursive;
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 #infoGrid .container .parent {
@@ -463,14 +472,14 @@ nav .navbar .links ul li {
 
 #faq .container .title h1 {
   font-family: "Abril Fatface", cursive;
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 #faq .container .content {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
@@ -562,7 +571,7 @@ nav .navbar .links ul li {
 footer {
   width: 100%;
   background: #254d32;
-  padding: 10rem 0;
+  padding: 10rem 10rem;
 }
 
 a {
@@ -584,7 +593,7 @@ footer .content {
 }
 
 footer .content p, a {
-  color: #fff;
+  color: #69b578;
 }
 
 footer .content .box {
@@ -595,9 +604,9 @@ footer .content .box {
 
 footer .content .topic {
   font-size: 22px;
-  font-weight: 600;
   color: #fff;
   margin-bottom: 16px;
+  font-family: "Abril Fatface", cursive;
 }
 
 footer .content p {

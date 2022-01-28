@@ -15,18 +15,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             text-align: center;
             h1 {
                 font-family: $bfont;
-                font-size: 7rem;
+                font-size: 5rem;
             }
         }
 
         .info {
             display: flex;
             justify-content: space-around;
+            width: 100%;
+            height: 30vh;
+            align-items: center;
 
             .item {
                 display: flex;
                 gap: 1rem;
-                height: 10vh;
                 width: 25%;
 
                 .num {
@@ -35,7 +37,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: 5rem;
+                    font-size: 3rem;
                     font-weight: 600;
                     color: #69b578;
                     border-radius: 50%;
@@ -44,13 +46,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
                 .content {
                     width: 70%;
-                    font-size: 1.5rem;
+                    height: 100%;
+                    font-size: 1.2rem;
                 }
             }
 
             .pipe {
                 width: 5px;
-                height: 15vh;
+                height: 30vh;
                 border-radius: 2.5px;
                 background-color: #69b578;
             }

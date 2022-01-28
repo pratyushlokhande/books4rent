@@ -1,7 +1,7 @@
 footer{
   width: 100%;
   background: #254d32;
-  padding: 10rem 0;
+  padding: 10rem 10rem;
 }
 
 a {
@@ -16,7 +16,7 @@ footer .content{
   justify-content: space-between;
 }
 footer .content p,a{
-  color: #fff;
+  color: #69b578;
 }
 footer .content .box{
   width: 33%;
@@ -24,9 +24,9 @@ footer .content .box{
 }
 footer .content .topic{
   font-size: 22px;
-  font-weight: 600;
   color: #fff;
   margin-bottom: 16px;
+  font-family: $bfont;
 
 }
 footer .content p{

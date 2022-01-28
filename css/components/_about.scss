@@ -5,14 +5,15 @@
     .container {
         display: flex;
         width: 100%;
+        gap: 10%;
     
         .about-left {
-            width: 50%;
+            width: 40%;
             height: 100%;
                 margin-top: auto;
 
             .img-container {
-                width: 80%;
+                width: 100%;
                 
                 img {
                     width: 100%;
@@ -27,13 +28,13 @@
 
             .about-title {
                 font-family: $bfont;
-                font-size: 7rem;
+                font-size: 5rem;
             }
 
             .about-text {
                 margin-top: 3rem;
                 font-family: $poppins;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 line-height: 1.5;
                 color: #69b578;
                 letter-spacing: 0.2rem;
