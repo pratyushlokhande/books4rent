@@ -1,92 +1,115 @@
-
-
 #home {
     position: relative;
-    background-color: #254d32;
+    width: 100%;
     height: 100vh;
+}
+
+.home-page-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
-    .container {
-        position: relative;
-        display: flex;
-        .home-left {
-            width: 50%;
-            // height: 100vh;
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            margin-top: auto;
-            .title {
-                width: 100%;
-                h1 {
-                    font-size: 5rem;
-                    line-height: 1;
-                    color: #d0db97;
-                    letter-spacing: 0.2rem;
-                }
+    @media screen and (max-width: 768px) {
+        gap: 1rem;
+    }
 
-                h3 {
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                    width: 80%;
-                    color: #69b578;
-                }
+}
 
-            }
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-            .bar {
-                width: 60%;
-                height: 1px;
-                margin-right: auto;
-                background-color: #fff;
-            }
+    .sub-title {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        font-size: 1rem;
+        letter-spacing: normal;
+        font-weight: 300;
+        color: #fff;
+        font-family: $nunito;
 
-
-            .button-container {
-                position: relative;
-                display: flex;                
-                align-items: center;
-                gap: 1rem;
-                width: 100%;
-
-                .button {
-                    position: relative;
-                    width: 12rem;
-                    height: 3rem;
-                    border: 2px solid #69b578;
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                    text-decoration: none;
-                    color: #fff;
-                    transition: all ease 250ms;
-                    overflow: hidden;
-
-                    &:hover {
-                        background-color: #fff;
-                        color: #69b578;
-                        border-color: #fff;
-                    }
-                }
-            }
-            
+        @media screen and (max-width: 768px) {
+            font-size: 0.6rem;
         }
-        
-        .home-right {
-            position: relative;
-            width: 50%;
-            display: flex;
-            
 
-            .img-container {
-                width: 90%;
-                margin-top: auto;
-                margin-left: auto;
+    }
+    
+    .main-title {
+        position: relative;
+        font-size: 5rem;
+        font-weight: bold;
+        font-family: $poppins;
+        font-weight: 300;
+        color: #c3073f;
+        letter-spacing: 0.5rem;
+        span {
+            font-size: 8rem;
+            color: #fff;
+            font-family: $nunito;
+            font-weight: 800;
+        }
 
-                img {
-                    width: 100%;
-                    object-fit: contain;
-                    object-position: center;
-                }
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+            span {
+                font-size: 3.5rem;
             }
+        }
+    }
+}
+
+.bar {
+    position: relative;
+    width: 40%;
+    height: 3px;
+    background-color: #4e4e50;
+    border-radius: 1.5rem;
+}
+
+.button-container {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    .button {
+        text-decoration: none;
+        width: 20rem;
+        height: 3rem;
+        // border-radius: 1.5rem;
+        color: #fff;
+        font-family: $nunito;
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
+        display: grid;
+        place-items: center;
+        border: 2px solid #6f2232;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #fff;
+            border-color: #fff;
+            color: #c3073f;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 5rem;
+
+        .button {
+            width: 80%;
+
         }
     }
 }

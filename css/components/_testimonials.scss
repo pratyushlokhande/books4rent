@@ -1,0 +1,85 @@
+#testimonials {
+    position: relative;
+    width: 100%;
+
+    margin: 5rem 0;
+
+    .container {
+
+        .title {
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 5rem;
+            }
+            margin: 3rem 0;
+
+            @media screen and (max-width: 768px) {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                width: calc(100% / 3);
+                aspect-ratio: 1;
+
+                @media screen and (max-width: 768px) {
+                    aspect-ratio: 3/4;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #151518;
+                padding: 2rem;
+
+                .bar {
+                    width: 100%;
+                    height: 3px;
+                    background-color: #c3073f;
+                }
+
+                blockquote {
+                    width: 100%;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    color: rgb(85, 82, 82);
+                }
+
+                .auth-details {
+                    display: flex;
+                    width: 75%;
+                    gap: 1rem;
+                    align-items: center;
+                }
+
+                .img-container {
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 100%;
+                        aspect-ratio: 1;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .author {
+                    width: 100%;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    font-family: $nunito;
+                    color: #c3073f;
+                }
+            }
+        }
+    }
+}

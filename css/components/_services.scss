@@ -1,0 +1,41 @@
+#service {
+    position: relative;
+    width: 100%;
+    margin: 10rem 0;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .service-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .icon {
+                i {
+                    font-size: 2rem;
+                    color: #fff;
+                }
+            }
+
+            .info {
+                font-size: 1.2rem;
+                color: rgb(85, 82, 82);
+                font-weight: 600;
+            }
+        }
+    }
+}
