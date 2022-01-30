@@ -4,8 +4,9 @@ header {
     
     .container {
         height: 50vh;
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
 
         @media screen and (max-width: 768px) {
             height: 30vh;

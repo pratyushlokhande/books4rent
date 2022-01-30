@@ -13,17 +13,26 @@
         }
 
         .left {
+            position: relative;
             flex: 1;
-            
+            height: inherit;
+            display: flex;
+            align-items: center;
             .punch {
                 width: 75%;
+                margin: auto 0;
+            
+                margin: auto 0;
                 font-size: 3rem;
+                line-height: 3.5rem;
                 color: #fff;
                 font-family: $poppins;
+                font-weight: 300;
 
                 span {
                     color: #c3073f;
                     font-family: $nunito;
+                    font-weight: 700;
                 }
 
                 @media screen and (max-width: 768px) {
