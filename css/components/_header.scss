@@ -1,0 +1,14 @@
+
+header {
+    width: 100%;
+    
+    .container {
+        height: 50vh;
+        display: grid;
+        place-items: center;
+
+        @media screen and (max-width: 768px) {
+            height: 30vh;
+        }
+    }
+}

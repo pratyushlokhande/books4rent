@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>books4rent</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container">
+          <div class="title">
+            <div class="sub-title">...coz they've got stories in them!</div>
+            <div class="main-title">BOOKS<span>4</span>RENT</div>
+          </div>
+        </div>
+      </header>
+
+      <section id="form">
+        <div class="container">
+          <form action="">
+            <div class="buy-sell">
+              <div class="wrapper">
+                <!-- Buy -->
+                <input type="radio" name="buy-sell" id="buy" checked />
+                <input type="radio" name="buy-sell" id="sell" />
+                <label for="buy" class="option buy">
+                  <div class="dot"></div>
+                  <span>Buy</span>
+                </label>
+
+                <!-- Sell -->
+                <label for="sell" class="option sell">
+                  <div class="dot"></div>
+                  <span>Sell</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group">
+                <label for="">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Phone</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone"
+                />
+              </div>
+            </div>
+            <div class="address">
+              <label for="address">Address</label>
+              <div class="address-group">
+                <input
+                  type="text"
+                  name="house-no"
+                  placeholder="Flat, House no., Building"
+                />
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Area, Colony, Street"
+                />
+              </div>
+              <div class="address-group">
+                <input type="text" name="landmark" placeholder="Landmark" />
+                <input type="text" name="city" placeholder="Town/City" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <label for="class">Class</label>
+                <select name="class" id="class">
+                  <option value="">Select Class</option>
+                  <option value="6">Class 6</option>
+                  <option value="7">Class 7</option>
+                  <option value="8">Class 8</option>
+                  <option value="9">Class 9</option>
+                  <option value="10">Class 10</option>
+                  <option value="11">Class 11</option>
+                  <option value="12">Class 12</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="board">Board</label>
+                <select name="board" id="board">
+                  <option value="">Select Board</option>
+                  <option value="cbse">CBSE</option>
+                  <option value="icse">ICSE</option>
+                  <option value="mp">MP Board</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="book-label" for="books">Select Books</label>
+
+              <div class="books">
+                <ul class="boxes">
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxOne"
+                      value="Rainbow Dash"
+                    /><label for="checkboxOne">Rainbow Dash</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxTwo"
+                      value="Cotton Candy"
+                      checked
+                    /><label for="checkboxTwo">Cotton Candy</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxThree"
+                      value="Rarity"
+                      checked
+                    /><label for="checkboxThree">Rarity</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxFour"
+                      value="Moondancer"
+                    /><label for="checkboxFour">Moondancer</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxFive"
+                      value="Surprise"
+                    /><label for="checkboxFive">Surprise</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxSix"
+                      value="Twilight Sparkle"
+                      checked
+                    /><label for="checkboxSix">Twilight Sparkle</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxSeven"
+                      value="Fluttershy"
+                    /><label for="checkboxSeven">Fluttershy</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxEight"
+                      value="Derpy Hooves"
+                    /><label for="checkboxEight">Derpy Hooves</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxNine"
+                      value="Princess Celestia"
+                    /><label for="checkboxNine">Princess Celestia</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxTen"
+                      value="Gusty"
+                    /><label for="checkboxTen">Gusty</label>
+                  </li>
+                  <li class="ks-selected">
+                    <input
+                      type="checkbox"
+                      id="checkboxEleven"
+                      value="Discord"
+                    /><label for="checkboxEleven">Discord</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxTwelve"
+                      value="Clover"
+                    /><label for="checkboxTwelve">Clover</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxThirteen"
+                      value="Baby Moondancer"
+                    /><label for="checkboxThirteen">Baby Moondancer</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxFourteen"
+                      value="Medley"
+                    /><label for="checkboxFourteen">Medley</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="checkboxFifteen"
+                      value="Firefly"
+                    /><label for="checkboxFifteen">Firefly</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group amount">
+              <label for="amount">Total Amount</label>
+              <input
+                type="text"
+                name="amount"
+                id="amount"
+                placeholder="1000"
+                disabled
+              />
+            </div>
+
+            <div class="bar"></div>
+
+            <div class="form-group agree">
+              <input
+                class="inp-cbx"
+                id="cbx"
+                type="checkbox"
+                style="display: none"
+              />
+              <label class="cbx" for="cbx">
+                  <span>
+                    <svg width="12px" height="9px" viewbox="0 0 12 9">
+                        <polyline points="1 5 4 8 11 1"></polyline>
+                    </svg>
+                  </span>
+                  <span>I agree to Terms and Conditions.</span>
+              </label>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
