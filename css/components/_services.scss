@@ -18,10 +18,15 @@
             justify-content: center;
             align-items: center;
             gap: 1rem;
+            background-color: #151518;
+            // padding: 2rem 3rem;
+            width: 300px;
+            height: 100px;
 
             @media screen and (max-width: 768px) {
                 flex-direction: column;
                 gap: 1rem;
+                height: 150px;
             }
 
             .icon {

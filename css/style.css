@@ -730,6 +730,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
+  background-color: #151518;
+  width: 300px;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -739,6 +742,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 1rem;
+    height: 150px;
   }
 }
 
@@ -922,6 +926,7 @@ body {
 #how .container .title {
   width: 100%;
   text-align: center;
+  color: #c3073f;
   margin-top: 3rem;
 }
 
@@ -989,7 +994,7 @@ body {
   font-weight: 600;
   color: #fff;
   border-radius: 50%;
-  border: 5px solid #000;
+  border: 5px solid #151518;
 }
 
 #how .container .info .item .content {
@@ -1081,8 +1086,6 @@ body {
   grid-area: 1 / 1 / 3 / 3;
   border-right: 5px solid #fff;
   border-bottom: 5px solid #fff;
-  -webkit-transform: translate(5px, 5px);
-          transform: translate(5px, 5px);
 }
 
 @media screen and (max-width: 768px) {
@@ -1098,16 +1101,13 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: 1 / 3 / 2 / 5;
-  border-left: 5px solid #fff;
   border-bottom: 5px solid #fff;
-  -webkit-transform: translate(-5px, 5px);
-          transform: translate(-5px, 5px);
 }
 
 @media screen and (max-width: 768px) {
   #infoGrid .container .div2 {
+    border-left: 5px solid #fff;
     border-top: 5px solid #fff;
-    border-bottom: none;
   }
 }
 
@@ -1117,11 +1117,7 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: 2 / 3 / 3 / 5;
-  border-left: 5px solid #fff;
   border-bottom: 5px solid #fff;
-  border-top: 5px solid #fff;
-  -webkit-transform: translate(-5px, 5px);
-          transform: translate(-5px, 5px);
 }
 
 @media screen and (max-width: 768px) {
@@ -1158,19 +1154,16 @@ body {
   -ms-grid-column-span: 1;
   grid-area: 3 / 4 / 4 / 5;
   border-left: 5px solid #fff;
-  border-top: 5px solid #fff;
-  -webkit-transform: translate(-5px, -5px);
-          transform: translate(-5px, -5px);
 }
 
 @media screen and (max-width: 768px) {
   #infoGrid .container .div5 {
     border-left: 0;
+    border-top: 5px solid #fff;
   }
 }
 
 #infoGrid .container .div1, #infoGrid .container .div2, #infoGrid .container .div3, #infoGrid .container .div4, #infoGrid .container .div5 {
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1206,6 +1199,7 @@ body {
   font-weight: 700;
   font-family: "Nunito", sans-serif;
   color: #c3073f;
+  font-style: italic;
 }
 
 #infoGrid .container .div1 {
@@ -1227,16 +1221,9 @@ body {
           align-items: center;
 }
 
-#infoGrid .container .div1 .img-container img {
-  width: 70%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-@media screen and (max-width: 768px) {
-  #infoGrid .container .div1 .img-container img {
-    width: 80%;
-  }
+#infoGrid .container .div1 .img-container i {
+  font-size: 15rem;
+  color: #151518;
 }
 
 #infoGrid .container .div4 {
@@ -1269,20 +1256,28 @@ body {
   height: 100%;
 }
 
-#infoGrid .container .div5 .img-container img {
-  width: 80%;
-  margin: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+#infoGrid .container .div5 .img-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#infoGrid .container .div5 .img-container i {
+  font-size: 5rem;
+  color: #151518;
 }
 
 @media screen and (max-width: 768px) {
-  #infoGrid .container .div5 .img-container img {
-    width: 100%;
-    height: 50vh;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin: 0;
+  #infoGrid .container .div5 .img-container {
+    padding: 2rem 0;
   }
 }
 

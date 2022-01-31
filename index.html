@@ -8,10 +8,11 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
 </head>
 <body>
 
@@ -77,18 +78,18 @@
 
   <!-- navbar end -->
 
-    <main>
+    <main id="smooth-scroll" data-scroll-container>
         <!-- Home -->
-        <section id="home">
+        <section id="home" data-scroll-section>
             <div class="container">
                 <div class="home-page-content">
                     
-                    <div class="title">
+                    <div class="title" data-scroll data-scroll-speed="2">
                         <div class="sub-title">...coz they've got stories in them!</div>
                         <div class="main-title">BOOKS<span>4</span>RENT</div>
                     </div>
-                    <div class="bar"></div>
-                    <div class="button-container">
+                    <div class="bar" data-scroll data-scroll-speed="1"></div>
+                    <div class="button-container" data-scroll data-scroll-speed="0">
                         <a id="buy-link" href="./form.html" class="button">BUY</a>
                         <a id="sell-link" href="./form.html" class="button">SELL</a>
                     </div>
@@ -98,7 +99,7 @@
         <!-- Home -->
 
         <!-- About -->
-        <section id="about">
+        <section id="about" data-scroll-section>
             <div class="container">
                 <div class="left"><div class="punch">We make <span>buy</span> and <span>sell</span> of books easier.</div></div>
                 <div class="right">
@@ -113,7 +114,7 @@
         <!-- About -->
 
         <!-- Service -->
-        <section id="service">
+        <section id="service" data-scroll-section>
             <div class="container">
                 <div class="service-item">
                     <div class="icon"><i class="fas fa-shopping-cart"></i></div>
@@ -132,7 +133,7 @@
         <!-- Services -->
 
         <!-- Sources -->
-        <section id="sources">
+        <section id="sources" data-scroll-section>
             <div class="source-container">
                 <div class="source-item">
                     <div class="head">
@@ -191,7 +192,7 @@
         </section>
 
         <!-- Buyer -->
-        <section id="how">
+        <section id="how" data-scroll-section>
         <div class="container">
           <div class="title">
             <h1>Buyer?</h1>
@@ -230,7 +231,7 @@
       </section>
 
       <!-- Seller -->
-      <section id="how" style="margin-top: 3rem;">
+      <section id="how" style="margin-top: 3rem;" data-scroll-section>
         <div class="container">
           <div class="title">
             <h1>Seller?</h1>
@@ -270,7 +271,7 @@
 
       <!-- iNFO Grid Start -->
 
-      <section id="infoGrid">
+      <section id="infoGrid" data-scroll-section>
         <div class="container">
           <div class="title">
             <h1>Info Grid</h1>
@@ -278,7 +279,8 @@
           <div class="parent">
             <div class="div1">
               <div class="img-container">
-                <img src="./assets/Bookshop-bro.svg" alt="journal">
+                <!-- <img src="./assets/Bookshop-bro.svg" alt="journal"> -->
+                <i class="fas fa-tv"></i>
               </div>
             </div>
             <div class="div2">
@@ -293,7 +295,8 @@
             </div>
             <div class="div5">
               <div class="img-container">
-                <img src="./assets/Education-rafiki.svg" alt="journal">
+                <!-- <img src="./assets/Education-rafiki.svg" alt="journal"> -->
+                <i class="fas fa-book-reader"></i>
               </div>
             </div>
           </div>
@@ -303,15 +306,13 @@
       <!-- iNFO Grid End -->
 
       <!-- Testimonials -->
-      <section id="testimonials">
+      <section id="testimonials" data-scroll-section>
           <div class="container">
             <div class="title">
                 <h1>Feedbacks</h1>
             </div>
             <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="bar"></div>
                         <blockquote>
@@ -373,23 +374,26 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
             </div>
           </div>
-      </section>        
-    </main>
+      </section>   
+      
+      <!-- Footer Start -->
 
-          <!-- Footer Start -->
-
-      <footer>
+      <footer data-scroll-section>
         © <span>books4rent.com</span>
       </footer>
 
       <!-- Footer End -->
+      
+    </main>
+
+          
 
     <!-- script -->
     <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
