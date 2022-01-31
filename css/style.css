@@ -23,7 +23,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -2021,5 +2021,93 @@ button:focus {
   width: 100%;
   height: 1px;
   background-color: #b9b8c3;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.modal .modal-container {
+  width: 80%;
+  max-width: 600px;
+  padding: 3rem 0;
+  background-color: #151518;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+
+.modal .modal-container .logo {
+  font-size: 1.2rem;
+}
+
+.modal .modal-container .logo span {
+  font-size: 1.5rem;
+  color: #c3073f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.modal .modal-container .msg {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.modal .modal-container .close {
+  width: 10rem;
+  height: 3rem;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 2px solid #6f2232;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.modal .modal-container .close:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #c3073f;
 }
 /*# sourceMappingURL=style.css.map */
