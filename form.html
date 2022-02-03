@@ -15,7 +15,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
-
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   </head>
   <body>
     <!-- Loader -->
@@ -150,6 +151,7 @@
                 <input
                   type="text"
                   name="house-no"
+                  id = 'house-no'
                   placeholder="Flat, House no., Building"
                   required
                 />
@@ -162,14 +164,14 @@
                 />
               </div>
               <div class="address-group">
-                <input type="text" name="landmark" placeholder="Landmark" required/>
-                <input type="text" name="city" placeholder="Town/City" required/>
+                <input type="text" name="landmark" id="landmark" placeholder="Landmark" required/>
+                <input type="text" name="city" id="city" placeholder="Town/City" required/>
               </div>
             </div>
             <div class="row">
               <div class="form-group">
                 <label for="class">Class</label>
-                <select name="class" id="class">
+                <select name="class" id="standard">
                   <option value="">Select Class</option>
                   <option value="6">Class 6</option>
                   <option value="7">Class 7</option>
@@ -355,6 +357,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
